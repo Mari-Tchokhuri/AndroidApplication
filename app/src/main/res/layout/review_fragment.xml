@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#DBDBDB"
+    tools:context=".fragments.ReviewFragment">
+
+
+    <LinearLayout
+        android:id="@+id/purpleLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/top_rounded_background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/leaveSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Leave Summary"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="27sp" />
+
+                <TextView
+                    android:id="@+id/submitLeave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Submit Leave"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="80dp"
+                android:background="@drawable/top_rounded_background"
+                android:src="@mipmap/cute_suitcase"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/totalLeave"
+            android:layout_width="400dp"
+            android:layout_height="165dp"
+            android:background="@drawable/rounded_backgound"
+            android:backgroundTint="#FFFFFF"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="19dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Leave"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#212121"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Period 1 Jan 2024 - 30 Dec 2024"
+                android:layout_marginBottom="9dp"
+                android:textColor="#6D6A6A"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="74dp"
+                android:layout_weight="1"
+                android:id="@+id/two_components">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="74dp"
+                    android:layout_weight="0.45"
+                    android:layout_marginRight="8dp"
+                    android:backgroundTint="#EDE9E9"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_backgound">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/green_circle"
+                        android:text="Available"
+                        android:padding="5dp"
+                        android:textColor="#544D4D"
+                        android:drawablePadding="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="20"
+                        android:textSize="20dp"
+                        android:paddingLeft="10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="74dp"
+                    android:layout_weight="0.45"
+                    android:layout_marginLeft="8dp"
+                    android:backgroundTint="#EDE9E9"
+                    android:orientation="vertical"
+                    android:background="@drawable/rounded_backgound">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/purple_circle"
+                        android:text="Leave Used"
+                        android:padding="5dp"
+                        android:textColor="#544D4D"
+                        android:drawablePadding="8dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:paddingLeft="10dp"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/button_layout_radius"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_margin="10dp"
+        >
+
+        <Button
+            android:id="@+id/review_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text = "Review"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/rounded_button"/>
+        <Button
+            android:id="@+id/approved_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text = "Approved"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textSize="15sp"
+            android:textColor="#525151"/>
+        <Button
+            android:id="@+id/rejected_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@android:color/transparent"
+            android:text = "Rejected"
+            android:textColor="#525151"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:background="@drawable/rounded_backgound"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        android:padding="19dp">
+
+
+        <TextView
+            android:id="@+id/leave_submitted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave Submitted"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/leave_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leave information"
+            android:textColor="#6D6A6A"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:src="@drawable/downloaded_icon"
+                app:tint="#54A600FF"
+                android:layout_gravity="center"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "No Leave Submitted!"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#212121"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text= "Ready to catch some fresh air? Click 'Submit Leave' and take that well-deserved break!"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#6D6A6A"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="7dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Submit Leave"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:background="@drawable/last_round_button"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+

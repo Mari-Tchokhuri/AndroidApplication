@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_bottom_nav"
+        android:title="Home"/>
+    <item
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/calendar_bottom_nav"
+        android:title="Calendar"/>
+    <item
+        android:id="@+id/nav_note"
+        android:icon="@drawable/note_bottom_nav"
+        android:title="Notes"/>
+    <item
+        android:id="@+id/nav_note2"
+        android:icon="@drawable/note2_bottom_nav"
+        android:title="ToDo"/>
+    <item
+        android:id="@+id/nav_layers"
+        android:icon="@drawable/layers_bottom_nav"
+        android:title="Layers"/>
+
+
+
+
+</menu>
