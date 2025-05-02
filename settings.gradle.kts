@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "2022-03-30"
+rootProject.name = "AndroidApplication"
 include(":app")
  
